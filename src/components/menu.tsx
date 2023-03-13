@@ -11,12 +11,8 @@ import Col from 'react-bootstrap/Col';
 function Menu() {
   return (
     <>
-    
-
-   
-   <br /> <br /> <br />
    <center>
-   <Container>
+   <Container style={{overflowY:'auto', height:420, maxHeight:420}}>
       <Row  style={{width:250}}>
         <Col xs style={{padding:0, margin:0}} >
         <Tile/>
@@ -35,6 +31,16 @@ function Menu() {
         <Tile/>
         </Col>
       </Row>
+      <Row  style={{width:250}}>
+        <Col xs style={{padding:0, margin:0}} >
+        <Tile/>
+        </Col>
+       
+        <Col xs style={{padding:0, margin:0}}>
+        <Tile/>
+        </Col>
+      </Row>
+
       <Row  style={{width:250}}>
         <Col xs style={{padding:0, margin:0}} >
         <Tile/>
