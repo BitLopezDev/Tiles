@@ -13,43 +13,30 @@ function Menu() {
     <>
    <center>
    <Container style={{overflowY:'auto', height:420, maxHeight:420}}>
-      <Row  style={{width:250}}>
+      <Row  style={{maxWidth:250}}>
+      </Row>
+      <Row  style={{maxWidth:250}}>
+          <Col xs style={{padding:0, margin:0}} >
+        <Tile size='small' name='John Doe' />
+        </Col>
         <Col xs style={{padding:0, margin:0}} >
         <Tile/>
         </Col>
-       
-        <Col xs style={{padding:0, margin:0}}>
-        <Tile/>
-        </Col>
-      </Row>
-      <Row  style={{width:250}}>
         <Col xs style={{padding:0, margin:0}} >
         <Tile/>
         </Col>
-       
-        <Col xs style={{padding:0, margin:0}}>
-        <Tile/>
-        </Col>
-      </Row>
-      <Row  style={{width:250}}>
         <Col xs style={{padding:0, margin:0}} >
         <Tile/>
         </Col>
-       
-        <Col xs style={{padding:0, margin:0}}>
+        <Col xs style={{padding:0, margin:0}} >
         <Tile/>
         </Col>
-      </Row>
+        <Col xs style={{padding:0, margin:0}} >
+        <Tile/>
+        </Col>
 
-      <Row  style={{width:250}}>
-        <Col xs style={{padding:0, margin:0}} >
-        <Tile/>
-        </Col>
-       
-        <Col xs style={{padding:0, margin:0}}>
-        <Tile/>
-        </Col>
       </Row>
+      
       
     </Container>
     </center>
