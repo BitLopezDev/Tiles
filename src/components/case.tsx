@@ -30,9 +30,9 @@ function Case({children} : LayoutProps) {
     </div>
     <footer className={styles.downbar} style={{border: "5px solid black", borderTop: 0, width:320, height:30, background: 'black', top:0 }}>
         <center>
-        <p style={{color: 'white'}}>
+    
           
-          <Container>
+          <Container style={{color: 'white'}}>
           <Row>
         <Col><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-badge-left-filled" width={24} height={24} viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -53,7 +53,7 @@ function Case({children} : LayoutProps) {
           </Container>
           
           
-          </p>
+      
         </center>
       </footer>
 </center>
