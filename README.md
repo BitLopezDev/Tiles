@@ -32,7 +32,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="">
+  <a href="https://github.com/BitLopezDev/Tiles">
     <img src="./public/images/readme.png" alt="Logo" width="80" height="80">
   </a>
 
