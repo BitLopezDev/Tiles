@@ -17,7 +17,7 @@
 [![TypeScript](https://img.shields.io/badge/--3178C6?logo=typescript&logoColor=ffffff)](https://www.typescriptlang.org/)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/BitLopezDev/Tiles)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/BitLopezDev/Tiles/blob/main/LICENSE)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]()
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/BitLopezDev/Tiles)
 
 
 

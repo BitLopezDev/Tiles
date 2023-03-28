@@ -9,7 +9,8 @@ interface TileProps {
   image?: string;
  
 }
-//FIXME: small tiles are separated from bottom
+//FIXME: small tiles are separated from bottomt
+//FIXME: tiles are separated row from row too much
 function Tile(props: TileProps) {
   const dimensions =[];
   //[width, height]
@@ -21,7 +22,7 @@ function Tile(props: TileProps) {
       break;
       case 'normal':
         dimensions.push(120);
-        dimensions.push(120);
+        dimensions.push(110);
        
         break;
         case 'big':
@@ -39,15 +40,15 @@ function Tile(props: TileProps) {
     <>
     
 
-    <div className="container mt-3" style={{maxWidth:250, padding:0, margin:0}} >
+    <div className="container mt-3" style={{maxWidth:250, padding:0, margin:0, }} >
  
-  <div className="card container-fluid  " style={{width:dimensions[0],  height:dimensions[1], "border":"2px solid black", bottom:0}} >
+  <div className="card container-fluid  " style={{width:dimensions[0] , background: 'blue',  height:dimensions[1], "border":"2px solid red", bottom:0, }} >
     <center className="navbar-brand">
       <Image className="rounded-pill" src={props.image || 'https://static.platzi.com/media/learningpath/badges/08261d05-1b55-4c23-b9b4-8427d4247835.jpg'} alt="Card image" width={props.size != 'small' ? 75 : 25} height ={props.size != 'small' ? 75 : 25} style={{marginTop: 5, padding:0 }} />
       </center>
     
     <div className="card-img-overlay d-flex align-items-end" style={{ padding:0, marginLeft:8  }} >
-      <p className="card-title" >{props.size != 'small' && (props.name || 'Jane Doe')} </p>
+      <p className="card-title" style={{color: 'white'}} >{props.size != 'small' && (props.name || 'Jane Doe')} </p>
       
     </div>
   </div>

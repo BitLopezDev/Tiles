@@ -14,15 +14,15 @@ type LayoutProps = {
 
 function Case({children} : LayoutProps) {
   return (
-    <>
+    <div >
     <center>
-    <div style={{border: "5px solid black", height:470, margin:2, width:320, marginBottom:0}} className={styles.case}>
+    <div style={{border: "5px solid black", height:470, margin:2, width:320, marginBottom:0, background: 'black'}} className={styles.case}>
       <div style={{ width:310, height:30, background: 'black'}}>
         <center>
         <p style={{color: 'white'}}>Nokia</p>
         </center>
       </div>
-      <div >
+      <div  >
          {children}
       </div>
      
@@ -32,7 +32,7 @@ function Case({children} : LayoutProps) {
         <center>
     
           
-          <Container style={{color: 'white'}}>
+          <Container style={{color: 'white', paddingBottom:30}}>
           <Row>
         <Col><svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-badge-left-filled" width={24} height={24} viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -59,9 +59,17 @@ function Case({children} : LayoutProps) {
 </center>
    
    
-   
+   <style jsx>
+    
+    {`
+    svg {
+      margin-top:-14px;
+      vertical-align: center;
+    }
+    `}
+   </style>
 
-    </>
+    </div>
   )
 }
 
