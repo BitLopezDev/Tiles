@@ -5,14 +5,31 @@ import styles from 'styles/styles/Home.module.css'
 import {Tile} from './tile';
 const inter = Inter({ subsets: ['latin'] });
 import Container from 'react-bootstrap/Container';
+
+import Navbar from 'react-bootstrap/Navbar';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import LteMobiledataIcon from '@mui/icons-material/LteMobiledata';
+import NetworkWifiIcon from '@mui/icons-material/NetworkWifi';
+import Battery80Icon from '@mui/icons-material/Battery80';
 type LayoutProps = {
   children?: React.ReactNode
 }
 
 function Case({children} : LayoutProps) {
+  const battery = {
+ 
+    transform: 'rotate(90deg)',
+    color:'white', 
+    float:'left', 
+    /*paddingBottom:5*/
+    verticaAlign: 'text-top'
+
+  
+  
+
+  }
   return (
     <div >
     <center>
@@ -22,8 +39,40 @@ function Case({children} : LayoutProps) {
         <p style={{color: 'white'}}>Nokia</p>
         </center>
       </div>
-      <div  >
-         {children}
+
+
+
+ 
+    
+
+
+
+
+      <div>
+      <Navbar  expand="lg" bg="dark" variant="dark" style={{padding:'0'}}>
+  
+      <Container>
+ 
+      
+ <Row style={{border: '2px solid green ', width:'110%', }}>
+  <Col style={{border: '2px solid red',  padding:0}}>
+    
+  <LteMobiledataIcon style={{color:'white', float:'left', marginLeft:2}} />
+  <NetworkWifiIcon style={{color:'white', float:'left', marginLeft:4}} />
+  </Col>
+  <Col></Col>
+  <Col style={{padding: '0', 'marginTop':0}}>
+    <Battery80Icon style={battery} />
+    
+    <h6 style={{padding:'none', color:'white', fontSize:'0.8em', float:'right', margin:'none'}}>22:00 &nbsp;</h6></Col>
+  
+ </Row>
+  
+</Container>
+  </Navbar>
+      {children}
+      
+         
       </div>
      
       

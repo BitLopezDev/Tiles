@@ -42,8 +42,8 @@ class Search extends Component {
        <input type='text' placeholder='Buscar en la web o el teléfono' style={input} />
        <br />
       
-       <Row style={{border: '2px solid green ', width:'90%'}}>
-        <Col style={{border: '2px solid red',  padding:0}}>
+       <Row style={{border: 'none ', width:'90%'}}>
+        <Col style={{border: 'none',  padding:0}}>
         <InsightsIcon  style={{ 'float':'left', color:'white'}} />
         <p style={{color:'white', width:'70%'}}> <b>BitLopez</b></p>
         </Col>
