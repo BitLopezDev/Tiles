@@ -19,16 +19,18 @@ type LayoutProps = {
 
 function Case({children} : LayoutProps) {
   const battery = {
- 
-    transform: 'rotate(90deg)',
-    color:'white', 
-    float:'left', 
-    /*paddingBottom:5*/
-    verticaAlign: 'text-top'
-
+    
+    /*transform: 'rotate(90deg)',  verticaAlign: 'top',*/
+    color:'white',
+   paddingTop:0,
+   marginTop:0,
   
+    margin:0,
+    width:14,
+    height:14,
+    
   
-
+    
   }
   return (
     <div >
@@ -54,17 +56,17 @@ function Case({children} : LayoutProps) {
       <Container>
  
       
- <Row style={{border: '2px solid green ', width:'110%', }}>
-  <Col style={{border: '2px solid red',  padding:0}}>
+ <Row style={{border: 'none ', width:'110%', height:20 }}>
+  <Col style={{border: 'none',  padding:0}}>
     
-  <LteMobiledataIcon style={{color:'white', float:'left', marginLeft:2}} />
-  <NetworkWifiIcon style={{color:'white', float:'left', marginLeft:4}} />
+  <LteMobiledataIcon style={{color:'white', float:'left', marginLeft:4, marginTop:2, height:15, width:15}} />
+  <NetworkWifiIcon style={{color:'white', float:'left', marginLeft:6, marginTop:2, height:15, width:15}} />
   </Col>
   <Col></Col>
   <Col style={{padding: '0', 'marginTop':0}}>
-    <Battery80Icon style={battery} />
+    <Battery80Icon style={battery}  />
     
-    <h6 style={{padding:'none', color:'white', fontSize:'0.8em', float:'right', margin:'none'}}>22:00 &nbsp;</h6></Col>
+    <h6 style={{padding:'none', color:'white', fontSize:'0.8em', float:'right', margin:'0', height:16}}>22:00 &nbsp;</h6></Col>
   
  </Row>
   
