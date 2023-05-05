@@ -1,20 +1,16 @@
 import * as React from 'react';
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from 'styles/styles/Home.module.css'
-import InsightsIcon from '@mui/icons-material/Insights';
+import Head from 'next/head';
+import Image from 'next/image';
 import {Menu} from '../components/menu';
 import {Search} from '../components/search';
 import {Case} from '../components/case';
-import {Display} from '../components/display';
 import './../../node_modules/bootstrap/dist/css/bootstrap.css';
-const inter = Inter({ subsets: ['latin'] });
+
 
 function useState() {
   const [state, setState] = React.useState({
-    HomeDisplay: false,
-    SearchDisplay: true,
+    HomeDisplay: true,
+    SearchDisplay: false,
     ListDisplay: false,
   });
   
@@ -27,7 +23,7 @@ function useState() {
     }
 
 }
- function Screen()  {
+ function Display()  {
 
    
     return (
@@ -35,21 +31,19 @@ function useState() {
   
     
   
-    <Case > 
-<Display></Display>
-      {/* {
+    < > 
+      {
 useState()
 
-      } */}
+      }
    
-    </Case>  
+    </>  
 
-<button onClick={() => {}}>Click</button>
-        <p></p>
+
       </>
     );
   
 }
 
-export default Screen;
+export  {Display};
 

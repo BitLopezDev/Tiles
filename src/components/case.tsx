@@ -35,7 +35,7 @@ function Case({children} : LayoutProps) {
   return (
     <div >
     <center>
-    <div style={{border: "5px solid black", height:470, margin:2, width:320, marginBottom:0, background: 'black'}} className={styles.case}>
+    <div style={{border: "5px solid black", height:480, margin:2, width:320, marginBottom:0, background: 'black'}} className={styles.case}>
       <div style={{ width:310, height:30, background: 'black'}}>
         <center>
         <p style={{color: 'white'}}>Nokia</p>
