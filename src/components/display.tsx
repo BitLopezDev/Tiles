@@ -6,8 +6,13 @@ import {Search} from '../components/search';
 import {Case} from '../components/case';
 import './../../node_modules/bootstrap/dist/css/bootstrap.css';
 
+interface Props {
+  Home: Boolean,
+  Search: Boolean,
+  List: Boolean,
+}
 
-function useState() {
+function useState(props : Props){
   const [state, setState] = React.useState({
     HomeDisplay: true,
     SearchDisplay: false,
@@ -23,7 +28,7 @@ function useState() {
     }
 
 }
- function Display()  {
+ function Display(props : Props)  {
 
    
     return (
@@ -33,7 +38,7 @@ function useState() {
   
     < > 
       {
-useState()
+useState(props)
 
       }
    
